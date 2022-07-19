@@ -87,7 +87,7 @@ START_TEXT = """**Heyy {} This is id bot.,**
 """
 
 DC_TEXT = """**🆔 Your Telegram DC Is :** `{}`"""
-DC_TEXT = """**🆔 Your Telegram ID Is :** `{}`"""
+ID_TEXT = """**🆔 Your Telegram ID Is :** `{}`"""
 START_BUTTON = InlineKeyboardMarkup(
              [[
              InlineKeyboardButton('♻️ Updates Channel ♻️', url=f"https://telegram.me/PYRO_BOTZ")
