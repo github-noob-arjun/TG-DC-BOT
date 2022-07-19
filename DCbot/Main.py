@@ -32,7 +32,7 @@ async def start(bot, update):
     )
 @DCBot.on_message(filters.private & filters.command(["id"]))
 async def start(bot, update):
-    text = ("**🆔 Your Telegram ID Is :** `{update.from_user.id}`\n**This Chat ID Is :** `{update.chat.id}`")
+    text = (f"**🆔 Your Telegram ID Is :** `{update.from_user.id}`\n**This Chat ID Is :** `{update.chat.id}`")
     reply_markup = START_BUTTON
     await update.reply_text(
         text=text,
