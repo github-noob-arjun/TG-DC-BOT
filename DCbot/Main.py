@@ -32,7 +32,7 @@ async def start(bot, update):
     )
 @DCBot.on_message(filters.private & filters.command(["id"]))
 async def start(bot, update):
-    text = ID_TEXT.format(update.from_user.id)
+    text = ("**🆔 Your Telegram ID Is :** `{update.from_user.id}`\n**This Chat ID Is :** `{update.chat.id}`")
     reply_markup = START_BUTTON
     await update.reply_text(
         text=text,
@@ -80,14 +80,13 @@ START_TEXT = """**Heyy {} This is id bot.,**
 
 **__COMMANDS__**
 
-**/id : See your Telegram ID
+**/id : See your chat/user ID
 /dc : See your Telegram DC
 
 • Forward any chat message to get info**
 """
 
 DC_TEXT = """**🆔 Your Telegram DC Is :** `{}`"""
-ID_TEXT = """**🆔 Your Telegram ID Is :** `{}`"""
 START_BUTTON = InlineKeyboardMarkup(
              [[
              InlineKeyboardButton('♻️ Updates Channel ♻️', url=f"https://telegram.me/PYRO_BOTZ")
