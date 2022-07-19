@@ -5,9 +5,9 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
  
 DCBot = Client(
       "DC_ID_Bot",
-      bot_token="5589185991:AAGDjCCcp7IG1u_YQErui5yLwyfXizptXYI",
-      api_id="4738674",
-      api_hash="f2be74eaa9b1cb32498f45d04e4dbb54",
+      bot_token="",
+      api_id="",
+      api_hash="",
 )
 
 @DCBot.on_message(filters.private & filters.command(["start"]))
